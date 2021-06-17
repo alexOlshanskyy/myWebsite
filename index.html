@@ -54,8 +54,10 @@
 									<h3>Snake AI</h3>
 								</header>
 								<p>This Java project uses two techniques to play snake.
-								   One is path finding with shortest/longest paths using A* algorithm. 
-								   The other is Hamiltonian cycle, which finds a cycle around the grid and follows it.
+									One is path finding with shortest/longest paths using A* algorithm. 
+									The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state.
+									The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees
+									snake wins every time, however, it can be slow.
 								  <p>Demo: <a href="https://www.youtube.com/watch?v=TEEFZ9yv-WQ" target="_blank"> YouTube </a></p> 
 								  <p>Source Code: <a href="https://github.com/alexOlshanskyy/snake_ai" target="_blank"> GitHub </a></p>
 								</p>
@@ -69,7 +71,9 @@
 								</header>
 								<p>This Java project uses bit manipulation to hide information inside of png images. 
 									The program takes a png image and and data file and replaces least significant bits in each pixel's RGB values to hide
-									data while keeping the changes in original image unnoticeable! 
+									data while keeping the changes in original image unnoticeable!
+									On large 4k Images this could be used to hide entire books or even other, smaller images. 
+									One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.  
 									<p>Source Code: <a href="https://github.com/alexOlshanskyy/ImageSteganography" target="_blank"> GitHub </a></p>
 								</p>
 							</div>
@@ -81,7 +85,7 @@
 									<h3>Mini Search Engine</h3>
 								</header>
 								<p>
-									This project uses Java and React to create a Mini Search Engine that can search selected .gov domains. 
+									This project uses Java and React to create a mini search engine that can search selected .gov domains. 
 									Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. 
 									This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.
 									<p>Source Code: <a href="https://github.com/alexOlshanskyy/Mini_Search_Engine" target="_blank"> GitHub </a></p>
