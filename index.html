@@ -1,134 +1,78 @@
-<!DOCTYPE HTML>
-<!--
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>Oleksandr Olshanskyy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<a class="logo"><h1>Oleksandr Olshanskyy</h1></a>
-			</header>
-
-		<!-- Banner -->
-
-		<!-- Highlights -->
-			<section class="wrapper">
-				<div class="inner">
-					<div class="highlights">
-					<section>
-						<h2>Software Developer</h2>
-						<h3>About Me:</h3>
-						<p>I am currently a senior at University of Washington, pursuing computer science bachelor’s degree. </p>
-						<p>I am interested in backend systems, cryptography and cyber security.</p>
-						<p>I love learning new technologies and using them in real world projects!</p>
-						<p>I have experience working in back-end, front-end, fullstack with languages like Java, C#, Go, Typescript, JavaScript. See my <a href="https://www.linkedin.com/in/oleksandr-olshanskyy-14254b188/" target="_blank">Linked In</a> for more details.</p>
-						<p></p>
-						<h3>My Projects: </h3>
-
-					</section>
-					<section>
-						<header class="special">
-							<img src="images/profile.png">
-						</header>
-					</section>
-				</div>
-				
-					
-					
-					<div class="highlights">
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-file-code-o"><span class="label">Icon</span></a>
-									<h3>Snake AI</h3>
-								</header>
-								<p>This Java project uses two techniques to play snake.
-									One is path finding with shortest/longest paths using A* algorithm. 
-									The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state.
-									The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees
-									snake wins every time, however, it can be slow.
-								  <p>Demo: <a href="https://www.youtube.com/watch?v=TEEFZ9yv-WQ" target="_blank"> YouTube </a></p> 
-								  <p>Source Code: <a href="https://github.com/alexOlshanskyy/snake_ai" target="_blank"> GitHub </a></p>
-								</p>
-							</div>
-						</section>
-							<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-file-code-o "><span class="label">Icon</span></a>
-									<h3>Image Steganography</h3>
-								</header>
-								<p>This Java project uses bit manipulation to hide information inside of png images. 
-									The program takes a png image and a data file and replaces least significant bits in each pixel's RGB values to hide
-									data while keeping the changes in original image unnoticeable!
-									On large 4k Images this could be used to hide entire books or even other, smaller images. 
-									One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.  
-									<p>Source Code: <a href="https://github.com/alexOlshanskyy/ImageSteganography" target="_blank"> GitHub </a></p>
-								</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-file-code-o "><span class="label">Icon</span></a>
-									<h3>Mini Search Engine</h3>
-								</header>
-								<p>
-									This project uses Java and React to create a mini search engine that can search selected .gov domains. 
-									Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. 
-									This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.
-									<p>Source Code: <a href="https://github.com/alexOlshanskyy/Mini_Search_Engine" target="_blank"> GitHub </a></p>
-								</p>
-							</div>
-						</section>				
-					</div>
-				</div>
-			</section>
-
-	
-
+<!DOCTYPE html>
+	<style>
+		.body{
+			background-color: #252424;
+		}
+		.intro{
+			color:rgb(129, 129, 129);
+			font-family: sans-serif;
+			margin-top: 45px;
+			text-align: center;
+		}
+		.profile{
+			float:left;
+		}
+		.img{
+			border-radius: 50%;
+		}
+		.about{		
+			color:rgb(129, 129, 129);
+			font-family: sans-serif;
+			font-size: 21px;
+			width: 450px;
+			float: left;
+			margin-right: 25px;
+		}
+		.wrapper{
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+	<body class="body">
+		<div class="intro">
+			<h1>Hi, I am Alex Olshanskyy</h1>
+		</div>
+		<div class="wrapper">
+			<div class="about">
+				<p><b>About Me:</b></p>
+				<p> I am currently a senior at University of Washington, pursuing computer science bachelor’s degree.</p>
+				<p> I am interested in backend systems, cryptography and cyber security.</p>
+				<p> I love learning new technologies and using them in real world projects!</p>	
+				<p> I have experience working in back-end, front-end, fullstack with languages like Java, C#, Go, Typescript, JavaScript. See my Linked In for more details.</p>
+			</div>
+			<div class="profile">
+				<img  class="img" src="images/profile.png"></img>
+			</div>
+			
+		</div>
 		
-					</div>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="content">
-						
-						<section>
-							<h4>Contact/Follow Me</h4>
-							<ul class="plain">	
-								<li><a href="https://www.linkedin.com/in/oleksandr-olshanskyy-14254b188/" target="_blank"><i class="icon fa-linkedin">&nbsp;</i>Linked In</a></li>
-								<li><a href="https://github.com/alexOlshanskyy" target="_blank"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-								<li><a href="mailto:olex.olshanskyy@gmail.com"><i class="icon fa-envelope">&nbsp;</i>Gmail</a></li>
-							</ul>
-						</section>
-					</div>
-					<div class="copyright">
-						&copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
-					</div>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
+	</p>
+	<p>Snake AI
+
+		This Java project uses two techniques to play snake. One is path finding with shortest/longest paths using A* algorithm. The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state. The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees snake wins every time, however, it can be slow.
+		
+		Demo: YouTube
+		
+		Source Code: GitHub </p>
+		<p>Image Steganography
+
+			This Java project uses bit manipulation to hide information inside of png images. The program takes a png image and a data file and replaces least significant bits in each pixel's RGB values to hide data while keeping the changes in original image unnoticeable! On large 4k Images this could be used to hide entire books or even other, smaller images. One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.
+			
+			Source Code: GitHub </p>
+			<p>Mini Search Engine
+
+				This project uses Java and React to create a mini search engine that can search selected .gov domains. Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.
+				
+				Source Code: GitHub </p>
+
+	<p>
+		Contact/Follow Me
+		
+			 Linked In
+			 Github
+			 Gmail
+		
+		 </p>
+		 
 </html>
