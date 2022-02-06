@@ -1,27 +1,34 @@
 <!DOCTYPE html>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 	<style>
 		.body{
-			background-color: #252424;
+			background-color: #d8d8d8;
 		}
 		.intro{
-			color:rgb(165, 165, 165);
-			font-family: sans-serif;
+			font-family: "Lucida Console", monospace;
 			margin-top: 45px;
 			text-align: center;
 		}
 		.profile{
-			float:left;
+			float: left;
 		}
 		.img{
 			border-radius: 50%;
 		}
 		.about{		
-			color:rgb(165, 165, 165);
-			font-family: sans-serif;
+			font-family: "Lucida Console", monospace;
 			font-size: 21px;
 			width: 450px;
 			float: left;
 			margin-right: 25px;
+		}
+		.project{		
+			text-align: center;
+			font-family: "Lucida Console", monospace;
+			font-size: 21px;
+			width: 450px;
+			justify-content: center;
 		}
 		.wrapper{
 			display: flex;
@@ -34,37 +41,68 @@
 		</div>
 		<div class="wrapper">
 			<div class="about">
-				<p><b>About Me:</b></p>
-				<p> I am currently a software engineer at Libert Mutual.</p>
+				<h3>About Me:</h3>
+				<p> I am currently a software engineer at Liberty Mutual.</p>
 				<p> I am interested in backend systems, cryptography and cyber security.</p>
 				<p> I love learning new technologies and using them in real world projects!</p>	
 				<p> I have experience working in back-end, front-end, fullstack with languages like Java, C#, Go, Typescript, JavaScript. See my Linked In for more details.</p>
+				<br><br>
+				<h3>My Projects:</h3>
+				<br>
 			</div>
 			<div class="profile">
 				<img  class="img" src="images/profile.png"></img>
 			</div>
 			
 		</div>
-		
+		<div class="wrapper">
+			<div class="project">
+				<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+					<path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
+				</svg>
+				<h3>Snake AI</h3>
+				<p>
+					This Java project uses two techniques to play snake. One is path finding with shortest/longest paths using A* algorithm. The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state. The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees snake wins every time, however, it can be slow.
+				</p>
+				<p>
+					Demo: YouTube
+				</p>
+				<p>
+					Source Code: GitHub 
+				</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="wrapper">
+			<div class="project">
+				<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+					<path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
+				</svg>
+				<h3>Image Steganography</h3>
+				<p>
+					This Java project uses bit manipulation to hide information inside of png images. The program takes a png image and a data file and replaces least significant bits in each pixel's RGB values to hide data while keeping the changes in original image unnoticeable! On large 4k Images this could be used to hide entire books or even other, smaller images. One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.					
+				</p>
+				<p>
+					Source Code: GitHub 
+				</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="wrapper">
+			<div class="project">
+				<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+					<path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
+				</svg>
+				<h3>Mini Search Engine</h3>
+				<p>
+					This project uses Java and React to create a mini search engine that can search selected .gov domains. Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.					
+				</p>
+				<p>
+					Source Code: GitHub 
+				</p>
+			</div>
+		</div>	
 	</body>
-	</p>
-	<p>Snake AI
-
-		This Java project uses two techniques to play snake. One is path finding with shortest/longest paths using A* algorithm. The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state. The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees snake wins every time, however, it can be slow.
-		
-		Demo: YouTube
-		
-		Source Code: GitHub </p>
-		<p>Image Steganography
-
-			This Java project uses bit manipulation to hide information inside of png images. The program takes a png image and a data file and replaces least significant bits in each pixel's RGB values to hide data while keeping the changes in original image unnoticeable! On large 4k Images this could be used to hide entire books or even other, smaller images. One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.
-			
-			Source Code: GitHub </p>
-			<p>Mini Search Engine
-
-				This project uses Java and React to create a mini search engine that can search selected .gov domains. Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.
-				
-				Source Code: GitHub </p>
 
 	<p>
 		Contact/Follow Me
@@ -73,6 +111,6 @@
 			 Github
 			 Gmail
 		
-		 </p>
+	</p>
 		 
 </html>
