@@ -27,13 +27,20 @@
 			text-align: center;
 			font-family: "Lucida Console", monospace;
 			font-size: 21px;
-			width: 450px;
+			width: 900px;
 			justify-content: center;
 		}
 		.wrapper{
 			display: flex;
 			justify-content: center;
 		}
+		.site-footer{
+			justify-content: center;
+			text-align: center;
+			font-family: "Lucida Console", monospace;
+			font-size: 18px;
+		}
+		
 	</style>
 	<body class="body">
 		<div class="intro">
@@ -45,7 +52,7 @@
 				<p> I am currently a software engineer at Liberty Mutual.</p>
 				<p> I am interested in backend systems, cryptography and cyber security.</p>
 				<p> I love learning new technologies and using them in real world projects!</p>	
-				<p> I have experience working in back-end, front-end, fullstack with languages like Java, C#, Go, Typescript, JavaScript. See my Linked In for more details.</p>
+				<p> I have experience working in back-end, front-end, fullstack with languages like Java, C#, Go, Typescript, JavaScript. See my <a href="https://www.linkedin.com/in/oleksandr-olshanskyy-14254b188/" target="_blank">LinkedIn</a> for more details.</p>
 				<br><br>
 				<h3>My Projects:</h3>
 				<br>
@@ -65,10 +72,10 @@
 					This Java project uses two techniques to play snake. One is path finding with shortest/longest paths using A* algorithm. The algorithm decides whether it is best to find the shortest or longest path to the target in every situation, based on game state. The other is Hamiltonian cycle, which finds a cycle around the grid that visits every point on the grid in one iteration. Because every point is visited, this guarantees snake wins every time, however, it can be slow.
 				</p>
 				<p>
-					Demo: YouTube
+					Demo: <a href="https://www.youtube.com/watch?v=TEEFZ9yv-WQ" target="_blank">YouTube</a>
 				</p>
 				<p>
-					Source Code: GitHub 
+					Source Code: <a href="https://github.com/alexOlshanskyy/snake_ai" target="_blank">GitHub</a> 
 				</p>
 			</div>
 		</div>
@@ -83,7 +90,7 @@
 					This Java project uses bit manipulation to hide information inside of png images. The program takes a png image and a data file and replaces least significant bits in each pixel's RGB values to hide data while keeping the changes in original image unnoticeable! On large 4k Images this could be used to hide entire books or even other, smaller images. One downfall with this technique is that because very pixel is modified, same pixels in the original image become slightly different which makes compression of the image less efficient.					
 				</p>
 				<p>
-					Source Code: GitHub 
+					Source Code: <a href="https://github.com/alexOlshanskyy/ImageSteganography" target="_blank">GitHub</a> 
 				</p>
 			</div>
 		</div>
@@ -98,19 +105,18 @@
 					This project uses Java and React to create a mini search engine that can search selected .gov domains. Common indexing techniques are used to index url data and compute search results. Jsoup library is used to do the crawling of the web. This project uses a standard frontend/backend model, where frontend sends search requests to the backend and gets search results back.					
 				</p>
 				<p>
-					Source Code: GitHub 
+					Source Code: <a href="https://github.com/alexOlshanskyy/Mini_Search_Engine" target="_blank">GitHub</a> 
 				</p>
 			</div>
 		</div>	
 	</body>
 
-	<p>
-		Contact/Follow Me
-		
-			 Linked In
-			 Github
-			 Gmail
-		
-	</p>
+	<div class="site-footer">
+		<p><b>Contact Me</b></p>
+		<p><a href="https://www.linkedin.com/in/oleksandr-olshanskyy-14254b188/" target="_blank">LinkedIn</a></p>
+		<p><a href = "mailto: olex.olshanskyy@gmail.com">Email</a></p>
+	</div>
+	
+	
 		 
 </html>
